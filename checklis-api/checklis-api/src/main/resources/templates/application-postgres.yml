@@ -1,0 +1,11 @@
+spring:
+  datasoure:
+    url: jdbc:h2:mem:checklist-app-db
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate:
+        ddl-auto: update
+        generate-ddl: true
+        show-sql: false
