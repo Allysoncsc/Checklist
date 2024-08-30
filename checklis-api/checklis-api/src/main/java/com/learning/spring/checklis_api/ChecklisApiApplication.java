@@ -4,6 +4,7 @@ import com.learning.spring.checklis_api.Repository.CategoriaRepository;
 import com.learning.spring.checklis_api.Repository.ProdutoRepository;
 import com.learning.spring.checklis_api.domain.Categoria;
 import com.learning.spring.checklis_api.domain.Produto;
+import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -52,4 +53,10 @@ public class ChecklisApiApplication implements CommandLineRunner {
 //		return obj.orElse(null);
 //	}
 //	categoriaRepository.saveAll(Arrays.asList(cat1,cat2));
+
+//	public Categoria find(Integer){
+//		Optional<Categoria> obj = repo.findById(id);
+//		return obj.orElseThrow(() -> new ObjectNotFoundException(
+//				"Objeto não encontrado!! Id: "+id+", Tipo: "+Categoria.class.getName()));
+//	}
 }
